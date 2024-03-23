@@ -8,28 +8,30 @@
 <body>
     <button id="btnImprimir">Imprimir Quadrado</button>
     <button id="btnImprimir2">Imprimir Retângulo</button>
-    <button id="btnImprimir3">Imprimir Circulo</button>
+    <!-- <button id="btnImprimir3">Imprimir Circulo</button> -->
     
     <script src="forma.js"></script>
     <script src="quadrado.js"></script>
-    <script src="retangulo.js"></script>
-    <script src="circulo.js"></script>
+    <script src="quadrado-colorido.js"></script>
+     <script src="retangulo.js"></script>
+    <!-- <script src="circulo.js"></script>  -->
 
     <script>
         //const forma = new Quadrado(10);
         //const forma = new Forma();
-        const forma = new Quadrado(15);
-        const forma1 = new Retangulo(5, 3);
-        const forma2 = new Circulo(5);
+        // const forma = new Quadrado(15);
+         const forma1 = new Retangulo(5, 3);
+        // const forma2 = new Circulo(5);
+        const forma = new QuadradoColorido(20,'azul')
         document.getElementById('btnImprimir').addEventListener('click', function(){
             forma.imprimeForma();
-        });
+         });
         document.getElementById('btnImprimir2').addEventListener('click', function(){
-            forma1.imprimeForma();
+             forma1.imprimeForma();
         });
-        document.getElementById('btnImprimir3').addEventListener('click', function(){
-            forma2.imprimeForma();
-        });
+        // document.getElementById('btnImprimir3').addEventListener('click', function(){
+        //     forma2.imprimeForma();
+         //});
         
     </script>
 </body>
